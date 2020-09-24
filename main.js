@@ -5,10 +5,10 @@
 
  function isItLong(str) {
 let x = str.length;
-  if (x > 19) {
+  if (x >= 20) {
     "that\'s a long string!";
   } else {
-    return undefined;
+    // return undefined;
   }
 }
 // isItLong('1234567890');
@@ -19,12 +19,13 @@ function isItMedium(str) {
   if (x >= 9 && x <= 19) {
     return 'that\'s a regular sized string';
   } else {
-
+    
   }
 }
 
 function isItShort(str) {
-  if (str.length < 9) {
+  let x = str.length
+  if (x < 9) {
     return 'thats a small string';
   } else {
    return 'thats not a small string';
