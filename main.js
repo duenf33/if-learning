@@ -5,30 +5,29 @@
 
  function isItLong(str) {
 let x = str.length;
-  if (x >= 20) {
-    "that\'s a long string!";
+  if (x > 20) {
+    return "That's a long string!";
+
   } else {
-    // return undefined;
+    return undefined;
   }
 }
-// isItLong('1234567890');
-console.log(isItLong('1234ffffjfjfjfjfjvvvvvvvvvvv'))
 
 function isItMedium(str) {
   let x = str.length;
-  if (x >= 9 && x <= 19) {
-    return 'that\'s a regular sized string';
+  if (x >= 10 && x <= 20) {
+    return "That's a regular sized string!";
   } else {
-    
+    return undefined;
   }
 }
 
 function isItShort(str) {
   let x = str.length
-  if (x < 9) {
-    return "that's a small string";
+  if (x < 10) {
+    return "That's a small string!";
   } else {
-   return "that's not a small string";
+    return "That's not a small string!";
   }
 }
 
@@ -43,21 +42,15 @@ function howLongIsMyString(str){
   }
 }
 
-let Colin = 62;
-// let Mesuara = 69;
 function instructorHeight(str) {
-
-  if (Colin === 62) {
+  if ("Colin" === str) {
     return 62;
-  } else if(Mesuara === 69) {
+  } else if("Mesuara" === str) {
     return 69;
   } else {
-    return 'I dont know that instructor';
+    return "I don't know that instructor!";
   }
 }
-
-
-
 
 /**********************************
  *      OUR CODE GOES BELOW.      *
