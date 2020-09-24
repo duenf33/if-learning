@@ -26,17 +26,17 @@ function isItMedium(str) {
 function isItShort(str) {
   let x = str.length
   if (x < 9) {
-    return 'thats a small string';
+    return "that's a small string";
   } else {
-   return 'thats not a small string';
+   return "that's not a small string";
   }
 }
 
 function howLongIsMyString(str){
   let x = str.length;
-  if (x >= 19){
+  if (x > 20){
     return "That's a long string!";
-  } else if (x > 9 && x < 19) {
+  } else if (x > 9 || x < 19 && x === 19) {
     return "That's a regular sized string!";
   } else {
     return "That's a small string!";
