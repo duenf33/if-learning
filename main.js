@@ -3,6 +3,57 @@
  ******************************/
 
 
+ function isItLong(str) {
+let x = str.length;
+  if (x > 19) {
+    "that\'s a long string!";
+  } else {
+    return undefined;
+  }
+}
+// isItLong('1234567890');
+console.log(isItLong('1234ffffjfjfjfjfjvvvvvvvvvvv'))
+
+function isItMedium(str) {
+  let x = str.length;
+  if (x >= 9 && x <= 19) {
+    return 'that\'s a regular sized string';
+  } else {
+
+  }
+}
+
+function isItShort(str) {
+  if (str.length < 9) {
+    return 'thats a small string';
+  } else {
+   return 'thats not a small string';
+  }
+}
+
+function howLongIsMyString(str){
+  let x = str.length;
+  if (x >= 19){
+    return "That's a long string!";
+  } else if (x > 9 && x < 19) {
+    return "That's a regular sized string!";
+  } else {
+    return "That's a small string!";
+  }
+}
+
+let Colin = 62;
+// let Mesuara = 69;
+function instructorHeight(str) {
+
+  if (Colin === 62) {
+    return 62;
+  } else if(Mesuara === 69) {
+    return 69;
+  } else {
+    return 'I dont know that instructor';
+  }
+}
 
 
 
